@@ -1,0 +1,1048 @@
+---------------------------------------------------------------
+[ 2017-12-29T15:57:56+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=3&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=3&pageSize=20 [运行时间：0.044514s][吞吐率：22.46req/s] [内存消耗：2,550.09kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.011785s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '3',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000816s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001124s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.005154s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.003633s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002446s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 40,20 [ RunTime:0.001068s ]
+---------------------------------------------------------------
+[ 2017-12-29T15:57:57+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=4&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=4&pageSize=20 [运行时间：0.054431s][吞吐率：18.37req/s] [内存消耗：2,528.61kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.021345s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '4',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001093s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000684s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010523s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003203s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002424s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002372s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 60,20 [ RunTime:0.001146s ]
+---------------------------------------------------------------
+[ 2017-12-29T15:57:57+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=5&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=5&pageSize=20 [运行时间：0.053248s][吞吐率：18.78req/s] [内存消耗：2,492.36kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.014308s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '5',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000832s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000756s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003639s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.007056s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.003567s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 80,20 [ RunTime:0.002016s ]
+---------------------------------------------------------------
+[ 2017-12-29T15:58:00+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=6&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=6&pageSize=20 [运行时间：0.049563s][吞吐率：20.18req/s] [内存消耗：2,509.79kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.020138s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '6',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000809s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000659s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010944s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002794s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002381s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000261s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002636s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 100,20 [ RunTime:0.001312s ]
+---------------------------------------------------------------
+[ 2017-12-29T15:58:01+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=7&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=7&pageSize=20 [运行时间：0.049080s][吞吐率：20.37req/s] [内存消耗：2,804.84kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.019273s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '7',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000800s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000661s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009875s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003013s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002743s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002491s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 120,20 [ RunTime:0.001686s ]
+---------------------------------------------------------------
+[ 2017-12-29T15:58:03+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=8&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=8&pageSize=20 [运行时间：0.050343s][吞吐率：19.86req/s] [内存消耗：2,474.55kb] [文件加载：72]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.020618s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '8',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000821s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000691s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010322s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003128s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002502s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002474s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 140,20 [ RunTime:0.001505s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:52+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=9&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=9&pageSize=20 [运行时间：0.043781s][吞吐率：22.84req/s] [内存消耗：2,744.63kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.009632s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '9',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001119s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000684s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002943s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002627s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002478s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 160,20 [ RunTime:0.001918s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:53+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=10&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=10&pageSize=20 [运行时间：0.048957s][吞吐率：20.43req/s] [内存消耗：2,531.41kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.017973s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '10',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000825s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000691s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009932s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003077s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002746s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002532s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 180,20 [ RunTime:0.001731s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:54+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=11&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=11&pageSize=20 [运行时间：0.051181s][吞吐率：19.54req/s] [内存消耗：2,446.91kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.021650s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '11',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000836s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000695s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009617s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003572s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002426s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002675s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 200,20 [ RunTime:0.001743s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:54+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=12&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=12&pageSize=20 [运行时间：0.044029s][吞吐率：22.71req/s] [内存消耗：2,455.35kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.013071s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '12',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000833s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000713s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002209s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003608s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002651s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002359s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 220,20 [ RunTime:0.001813s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:56+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=13&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=13&pageSize=20 [运行时间：0.051903s][吞吐率：19.27req/s] [内存消耗：3,362.20kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.017650s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '13',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000835s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000715s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009945s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002797s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002949s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002752s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 240,20 [ RunTime:0.002800s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:56+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=14&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=14&pageSize=20 [运行时间：0.064337s][吞吐率：15.54req/s] [内存消耗：2,630.66kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.011984s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '14',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.002070s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001551s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.004046s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.004143s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.006289s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 260,20 [ RunTime:0.003811s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:57+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=15&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=15&pageSize=20 [运行时间：0.053210s][吞吐率：18.79req/s] [内存消耗：2,473.80kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.022197s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '15',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000834s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000699s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010800s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.004213s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002489s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002686s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 280,20 [ RunTime:0.002170s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:57+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=16&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=16&pageSize=20 [运行时间：0.050465s][吞吐率：19.82req/s] [内存消耗：2,498.40kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.009816s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '16',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000936s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000785s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002888s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.003160s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.005855s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 300,20 [ RunTime:0.002473s ]
+---------------------------------------------------------------
+[ 2017-12-29T16:57:59+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/ajax/gettitles.html?catId=0&pageNum=17&pageSize=20
+[ info ] 127.0.0.6/portal/ajax/gettitles.html?catId=0&pageNum=17&pageSize=20 [运行时间：0.050504s][吞吐率：19.80req/s] [内存消耗：2,546.96kb] [文件加载：71]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.019313s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'ajax',
+    2 => 'gettitles',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'catId' => '0',
+  'pageNum' => '17',
+  'pageSize' => '20',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000836s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000714s ]
+[ info ] [ RUN ] app\portal\controller\AjaxController->getTitles[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\AjaxController.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009962s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.002916s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002689s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002772s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 320,20 [ RunTime:0.002451s ]
+---------------------------------------------------------------
+[ 2017-12-29T17:02:05+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/index/index.html
+[ info ] 127.0.0.6/portal/index/index.html [运行时间：0.099228s][吞吐率：10.08req/s] [内存消耗：3,015.61kb] [文件加载：79]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.018632s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/getsecondcat/cid/39.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.001137s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000702s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->index[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal\\index.html [ array (
+  0 => 'site_info',
+  1 => 'catList',
+  2 => 'links',
+  3 => 'catSecondList',
+  4 => 'titleList',
+  5 => 'topList',
+  6 => 'slideList',
+  7 => 'theme_vars',
+  8 => 'theme_widgets',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010078s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003164s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.003166s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.002481s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002301s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY published_time desc LIMIT 0,20 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY post_hits desc LIMIT 0,5 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `path` LIKE '%-%-%' [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_slide_item` [ RunTime:0.002987s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_slide_item` WHERE  `status` = 1  AND `slide_id` = 1 ORDER BY `list_order` [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.003015s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000263s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000222s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000204s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.000202s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000199s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000157s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.000162s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000165s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"\\u81ea\\u5a92\\u4f53\\u516c\\u53f8\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.000166s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.002424s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/index' ) [ RunTime:0.000268s ]
+---------------------------------------------------------------
+[ 2017-12-29T17:02:10+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/index/getsecondcat/cid/30.html
+[ info ] 127.0.0.6/portal/index/getsecondcat/cid/30.html [运行时间：0.092372s][吞吐率：10.83req/s] [内存消耗：2,881.12kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.018161s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'index',
+    2 => 'getsecondcat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '30',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000875s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.001011s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->getSecondCat[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal\\secondCat.html [ array (
+  0 => 'site_info',
+  1 => 'catList',
+  2 => 'links',
+  3 => 'secondCat',
+  4 => 'category',
+  5 => 'secondCategory',
+  6 => 'titleList',
+  7 => 'topList',
+  8 => 'theme_vars',
+  9 => 'theme_widgets',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010002s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003150s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002693s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.002503s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` [ RunTime:0.000210s ]
+[ sql ] [ SQL ] SELECT `id`,`parent_id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 30 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cmf_portal_category` WHERE  `parent_id` = 30  AND `status` = 1  AND `delete_time` = 0 [ RunTime:0.000191s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category_post` [ RunTime:0.002182s ]
+[ sql ] [ SQL ] SELECT `post_id` FROM `cmf_portal_category_post` WHERE  `category_id` IN (31,32,33,35) [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002223s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `id` IN (6407,6510,6468,6469,6566,6503,6504,6506,6508)  AND `published_time` > 0 ORDER BY published_time desc LIMIT 0,20 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY post_hits desc LIMIT 0,5 [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.002876s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000270s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000281s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000232s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"\\u81ea\\u5a92\\u4f53\\u516c\\u53f8\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.000221s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.002593s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/secondCat' ) [ RunTime:0.000225s ]
+---------------------------------------------------------------
+[ 2017-12-29T17:02:12+08:00 ] 127.0.0.6 127.0.0.1 GET /portal/index/getsecondcat/cid/34.html
+[ info ] 127.0.0.6/portal/index/getsecondcat/cid/34.html [运行时间：0.090946s][吞吐率：11.00req/s] [内存消耗：2,924.16kb] [文件加载：78]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run cmf\behavior\InitHookBehavior @app_init [ RunTime:0.019436s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\simplewind\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'portal',
+    1 => 'index',
+    2 => 'getsecondcat',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=ooepv27qgvlevd5n0qitoh6as4; admin_username=admin',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.6/portal/index/getsecondcat/cid/30.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.6',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'cid' => '34',
+)
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../simplewind/cmf/lang\zh-cn.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/admin\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\common.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\common.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\LangBehavior @app_begin [ RunTime:0.000871s ]
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn.php
+[ info ] [ CACHE ] INIT File
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/count\lang\zh-cn\home.php
+[ info ] [ LANG ] G:\phpStudy\WWW\thinkcmf\public/../app/portal\lang\zh-cn\home.php
+[ info ] [ BEHAVIOR ] Run cmf\behavior\HomeLangBehavior @home_init [ RunTime:0.000715s ]
+[ info ] [ RUN ] app\portal\controller\IndexController->getSecondCat[ G:\phpStudy\WWW\thinkcmf\app\portal\controller\IndexController.php ]
+[ info ] [ VIEW ] themes/simpleboot3/portal\\secondCat.html [ array (
+  0 => 'site_info',
+  1 => 'catList',
+  2 => 'links',
+  3 => 'secondCat',
+  4 => 'category',
+  5 => 'secondCategory',
+  6 => 'titleList',
+  7 => 'topList',
+  8 => 'theme_vars',
+  9 => 'theme_widgets',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010191s ] mysql:dbname=thinkcmf5;host=127.0.0.1;port=3306;charset=utf8mb4
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_hook_plugin` [ RunTime:0.003181s ]
+[ sql ] [ SQL ] SELECT `hook`,`plugin` FROM `cmf_hook_plugin` WHERE  `status` = 1 ORDER BY list_order ASC [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category` [ RunTime:0.002492s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 0 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_link` [ RunTime:0.002215s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_link` [ RunTime:0.000199s ]
+[ sql ] [ SQL ] SELECT `id`,`parent_id`,`name` FROM `cmf_portal_category` WHERE  `status` = 1  AND `parent_id` = 34 [ RunTime:0.000203s ]
+[ sql ] [ SQL ] SELECT `id` FROM `cmf_portal_category` WHERE  `parent_id` = 34  AND `status` = 1  AND `delete_time` = 0 [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_category_post` [ RunTime:0.002131s ]
+[ sql ] [ SQL ] SELECT `post_id` FROM `cmf_portal_category_post` WHERE  `category_id` IN (36,37,38) [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_portal_post` [ RunTime:0.002277s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `id` IN (6416,6432,6434,6474,6603,6604,6605,6669,6671,6676,6694,6696,6340,6412,6413,6415,6420,6421,6439,6440,6441,6444,6472,6480,6481,6482,6487,6606,6607,6608,6635,6667,6692,6693,6695,6409,6410,6417,6425,6426,6428,6430,6483)  AND `published_time` > 0 ORDER BY published_time desc LIMIT 0,20 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT `id`,`post_title`,`published_time`,`more` FROM `cmf_portal_post` WHERE  `post_status` = 1  AND `delete_time` = 0  AND `published_time` > 0 ORDER BY post_hits desc LIMIT 0,5 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme_file` [ RunTime:0.003071s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Article/index',`file`='portal/article',`name`='文章页',`more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"hot_articles_category_id\":{\"title\":\"Hot Articles\\u5206\\u7c7bID\",\"name\":\"hot_articles_category_id\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='文章页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/article' [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' LIMIT 1 [ RunTime:0.000249s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/contact',`name`='联系我们页',`more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"baidu_map_info_window_text\":{\"title\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57\",\"name\":\"baidu_map_info_window_text\",\"value\":\"ThinkCMF<br\\/><span class=\'\'>\\u5730\\u5740\\uff1a\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def2601\\u53f7<\\/span>\",\"type\":\"text\",\"tip\":\"\\u767e\\u5ea6\\u5730\\u56fe\\u6807\\u6ce8\\u6587\\u5b57,\\u652f\\u6301\\u7b80\\u5355html\\u4ee3\\u7801\",\"rule\":[]},\"company_location\":{\"title\":\"\\u516c\\u53f8\\u5750\\u6807\",\"value\":\"\",\"type\":\"location\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_cn\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\",\"value\":\"\\u4e0a\\u6d77\\u5e02\\u5f90\\u6c47\\u533a\\u659c\\u571f\\u8def0001\\u53f7\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"address_en\":{\"title\":\"\\u516c\\u53f8\\u5730\\u5740\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"NO.0001 Xie Tu Road, Shanghai China\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"email\":{\"title\":\"\\u516c\\u53f8\\u90ae\\u7bb1\",\"value\":\"catman@thinkcmf.com\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_cn\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\",\"value\":\"021 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"phone_en\":{\"title\":\"\\u516c\\u53f8\\u7535\\u8bdd\\uff08\\u82f1\\u6587\\uff09\",\"value\":\"+8621 1000 0001\",\"type\":\"text\",\"tip\":\"\",\"rule\":{\"require\":true}},\"qq\":{\"title\":\"\\u8054\\u7cfbQQ\",\"value\":\"478519726\",\"type\":\"text\",\"tip\":\"\\u591a\\u4e2a QQ\\u4ee5\\u82f1\\u6587\\u9017\\u53f7\\u9694\\u5f00\",\"rule\":{\"require\":true}}}}',`description`='联系我们页模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/contact' [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' LIMIT 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Index/index',`file`='portal/index',`name`='首页',`more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":{\"top_slide\":{\"title\":\"\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"admin\\/Slide\\/index\",\"multi\":false},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u9876\\u90e8\\u5e7b\\u706f\\u7247\",\"tip\":\"\",\"rule\":{\"require\":true}}},\"widgets\":{\"features\":{\"title\":\"\\u5feb\\u901f\\u4e86\\u89e3ThinkCMF\",\"display\":\"1\",\"vars\":{\"sub_title\":{\"title\":\"\\u526f\\u6807\\u9898\",\"value\":\"Quickly understand the ThinkCMF\",\"type\":\"text\",\"placeholder\":\"\\u8bf7\\u8f93\\u5165\\u526f\\u6807\\u9898\",\"tip\":\"\",\"rule\":{\"require\":true}},\"features\":{\"title\":\"\\u7279\\u6027\\u4ecb\\u7ecd\",\"value\":[{\"title\":\"MVC\\u5206\\u5c42\\u6a21\\u5f0f\",\"icon\":\"bars\",\"content\":\"\\u4f7f\\u7528MVC\\u5e94\\u7528\\u7a0b\\u5e8f\\u88ab\\u5206\\u6210\\u4e09\\u4e2a\\u6838\\u5fc3\\u90e8\\u4ef6\\uff1a\\u6a21\\u578b\\uff08M\\uff09\\u3001\\u89c6\\u56fe\\uff08V\\uff09\\u3001\\u63a7\\u5236\\u5668\\uff08C\\uff09\\uff0c\\u4ed6\\u4e0d\\u662f\\u4e00\\u4e2a\\u65b0\\u7684\\u6982\\u5ff5\\uff0c\\u53ea\\u662fThinkCMF\\u5c06\\u5176\\u53d1\\u6325\\u5230\\u4e86\\u6781\\u81f4\\u3002\"},{\"title\":\"\\u7528\\u6237\\u7ba1\\u7406\",\"icon\":\"group\",\"content\":\"ThinkCMF\\u5185\\u7f6e\\u4e86\\u7075\\u6d3b\\u7684\\u7528\\u6237\\u7ba1\\u7406\\u65b9\\u5f0f\\uff0c\\u5e76\\u53ef\\u76f4\\u63a5\\u4e0e\\u7b2c\\u4e09\\u65b9\\u7ad9\\u70b9\\u8fdb\\u884c\\u4e92\\u8054\\u4e92\\u901a\\uff0c\\u5982\\u679c\\u4f60\\u613f\\u610f\\u751a\\u81f3\\u53ef\\u4ee5\\u5bf9\\u5355\\u4e2a\\u7528\\u6237\\u6216\\u7fa4\\u4f53\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u8fdb\\u884c\\u8bb0\\u5f55\\u53ca\\u5206\\u4eab\\uff0c\\u4e3a\\u60a8\\u7684\\u8fd0\\u8425\\u51b3\\u7b56\\u63d0\\u4f9b\\u6709\\u6548\\u53c2\\u8003\\u6570\\u636e\\u3002\"},{\"title\":\"\\u4e91\\u7aef\\u90e8\\u7f72\",\"icon\":\"cloud\",\"content\":\"\\u901a\\u8fc7\\u9a71\\u52a8\\u7684\\u65b9\\u5f0f\\u53ef\\u4ee5\\u8f7b\\u677e\\u652f\\u6301\\u4e91\\u5e73\\u53f0\\u7684\\u90e8\\u7f72\\uff0c\\u8ba9\\u4f60\\u7684\\u7f51\\u7ad9\\u65e0\\u7f1d\\u8fc1\\u79fb\\uff0c\\u5185\\u7f6e\\u5df2\\u7ecf\\u652f\\u6301SAE\\u3001BAE\\uff0c\\u6b63\\u5f0f\\u7248\\u5c06\\u5bf9\\u4e91\\u7aef\\u90e8\\u7f72\\u8fdb\\u884c\\u8fdb\\u4e00\\u6b65\\u4f18\\u5316\\u3002\"},{\"title\":\"\\u5b89\\u5168\\u7b56\\u7565\",\"icon\":\"heart\",\"content\":\"\\u63d0\\u4f9b\\u7684\\u7a33\\u5065\\u7684\\u5b89\\u5168\\u7b56\\u7565\\uff0c\\u5305\\u62ec\\u5907\\u4efd\\u6062\\u590d\\uff0c\\u5bb9\\u9519\\uff0c\\u9632\\u6cbb\\u6076\\u610f\\u653b\\u51fb\\u767b\\u9646\\uff0c\\u7f51\\u9875\\u9632\\u7be1\\u6539\\u7b49\\u591a\\u9879\\u5b89\\u5168\\u7ba1\\u7406\\u529f\\u80fd\\uff0c\\u4fdd\\u8bc1\\u7cfb\\u7edf\\u5b89\\u5168\\uff0c\\u53ef\\u9760\\uff0c\\u7a33\\u5b9a\\u7684\\u8fd0\\u884c\\u3002\"},{\"title\":\"\\u5e94\\u7528\\u6a21\\u5757\\u5316\",\"icon\":\"cubes\",\"content\":\"\\u63d0\\u51fa\\u5168\\u65b0\\u7684\\u5e94\\u7528\\u6a21\\u5f0f\\u8fdb\\u884c\\u6269\\u5c55\\uff0c\\u4e0d\\u7ba1\\u662f\\u4f60\\u5f00\\u53d1\\u4e00\\u4e2a\\u5c0f\\u529f\\u80fd\\u8fd8\\u662f\\u4e00\\u4e2a\\u5168\\u65b0\\u7684\\u7ad9\\u70b9\\uff0c\\u5728ThinkCMF\\u4e2d\\u4f60\\u53ea\\u662f\\u589e\\u52a0\\u4e86\\u4e00\\u4e2aAPP\\uff0c\\u6bcf\\u4e2a\\u72ec\\u7acb\\u8fd0\\u884c\\u4e92\\u4e0d\\u5f71\\u54cd\\uff0c\\u4fbf\\u4e8e\\u7075\\u6d3b\\u6269\\u5c55\\u548c\\u4e8c\\u6b21\\u5f00\\u53d1\\u3002\"},{\"title\":\"\\u514d\\u8d39\\u5f00\\u6e90\",\"icon\":\"certificate\",\"content\":\"\\u4ee3\\u7801\\u9075\\u5faaApache2\\u5f00\\u6e90\\u534f\\u8bae\\uff0c\\u514d\\u8d39\\u4f7f\\u7528\\uff0c\\u5bf9\\u5546\\u4e1a\\u7528\\u6237\\u4e5f\\u65e0\\u4efb\\u4f55\\u9650\\u5236\\u3002\"}],\"type\":\"array\",\"item\":{\"title\":{\"title\":\"\\u6807\\u9898\",\"value\":\"\",\"type\":\"text\",\"rule\":{\"require\":true}},\"icon\":{\"title\":\"\\u56fe\\u6807\",\"value\":\"\",\"type\":\"text\"},\"content\":{\"title\":\"\\u63cf\\u8ff0\",\"value\":\"\",\"type\":\"textarea\"}},\"tip\":\"\"}}},\"last_news\":{\"title\":\"\\u6700\\u65b0\\u8d44\\u8baf\",\"display\":\"1\",\"vars\":{\"last_news_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='首页模板文件',`is_public`=0,`list_order`=5  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/index' [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' LIMIT 1 [ RunTime:0.000231s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/List/index',`file`='portal/list',`name`='文章列表页',`more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"vars\":[],\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='文章列表模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/list' [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' LIMIT 1 [ RunTime:0.000188s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/Page/index',`file`='portal/page',`name`='单页面',`more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`config_more`='{\"widgets\":{\"hottest_articles\":{\"title\":\"\\u70ed\\u95e8\\u6587\\u7ae0\",\"display\":\"1\",\"vars\":{\"hottest_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}},\"last_articles\":{\"title\":\"\\u6700\\u65b0\\u53d1\\u5e03\",\"display\":\"1\",\"vars\":{\"last_articles_category_id\":{\"title\":\"\\u6587\\u7ae0\\u5206\\u7c7bID\",\"value\":\"\",\"type\":\"text\",\"dataSource\":{\"api\":\"portal\\/category\\/index\",\"multi\":true},\"placeholder\":\"\\u8bf7\\u9009\\u62e9\\u5206\\u7c7b\",\"tip\":\"\",\"rule\":{\"require\":true}}}}}}',`description`='单页面模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/page' [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' LIMIT 1 [ RunTime:0.000176s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='portal/search/index',`file`='portal/search',`name`='搜索页面',`more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`config_more`='{\"vars\":{\"varName1\":{\"title\":\"\\u70ed\\u95e8\\u641c\\u7d22\",\"value\":\"1\",\"type\":\"text\",\"tip\":\"\\u8fd9\\u662f\\u4e00\\u4e2atext\",\"rule\":{\"require\":true}}}}',`description`='搜索模板文件',`is_public`=0,`list_order`=10  WHERE  `theme` = 'simpleboot3'  AND `file` = 'portal/search' [ RunTime:0.000185s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' LIMIT 1 [ RunTime:0.000172s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Config',`file`='public/config',`name`='模板全局配置',`more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`config_more`='{\"vars\":{\"enable_mobile\":{\"title\":\"\\u624b\\u673a\\u6ce8\\u518c\",\"value\":1,\"type\":\"select\",\"options\":{\"1\":\"\\u5f00\\u542f\",\"0\":\"\\u5173\\u95ed\"},\"tip\":\"\"}}}',`description`='模板全局配置文件',`is_public`=1,`list_order`=0  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/config' [ RunTime:0.000181s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' LIMIT 1 [ RunTime:0.000171s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme_file`  SET `theme`='simpleboot3',`action`='public/Nav',`file`='public/nav',`name`='导航条',`more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"\\u81ea\\u5a92\\u4f53\\u516c\\u53f8\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`config_more`='{\"vars\":{\"company_name\":{\"title\":\"\\u516c\\u53f8\\u540d\\u79f0\",\"name\":\"company_name\",\"value\":\"ThinkCMF\",\"type\":\"text\",\"tip\":\"\",\"rule\":[]}}}',`description`='导航条模板文件',`is_public`=1,`list_order`=1  WHERE  `theme` = 'simpleboot3'  AND `file` = 'public/nav' [ RunTime:0.000178s ]
+[ sql ] [ SQL ] SELECT * FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3' [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cmf_theme` [ RunTime:0.002304s ]
+[ sql ] [ SQL ] UPDATE `cmf_theme`  SET `name`='simpleboot3',`version`='1.0.2',`demo_url`='http://demo.thinkcmf.com',`author`='ThinkCMF',`lang`='zh-cn',`author_url`='http://www.thinkcmf.com',`keywords`='ThinkCMF模板',`description`='ThinkCMF默认模板'  WHERE  `theme` = 'simpleboot3' [ RunTime:0.000165s ]
+[ sql ] [ SQL ] SELECT `more` FROM `cmf_theme_file` WHERE  `theme` = 'simpleboot3'  AND (  `is_public` = 1 OR `file` = 'portal/secondCat' ) [ RunTime:0.000143s ]

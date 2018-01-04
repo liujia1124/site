@@ -1,0 +1,21 @@
+<div class="header-top-box">
+
+    <div class="header-top-cat">
+        <div class="header-top-cat-every">
+            <a href="{:url('portal/index/index')}"><b>首頁</b></a>
+        </div>
+        <volist name='catList' id='vo'>
+            <if condition="$vo['id'] neq 9">
+                <div class="header-top-cat-every">
+                    <a href="{:url('portal/index/getSecondCat',['cid'=>$vo['id']])}">{$vo['name']}</a>
+                </div>
+            </if>
+        </volist>
+        <div class="clear"></div>
+    </div>
+
+    <div class="header-top-right ">
+
+    </div>
+    <div class="div-clear"></div>
+</div>

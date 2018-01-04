@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$article.post_title}</title>
+    <meta name="keywords" content="{$article.post_keywords|default=''}"/>
+    <meta name="description" content="{$article.post_excerpt|default=''}">
+    <include file="public@head"/>
+    <include file="public@googleAd"/>
+    <style>
+        #article_content img {
+            height: auto !important;
+            max-width: 100%;
+        }
+
+        #article_content {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body class="body-white" style="margin:0px;padding: 0px;">
+
+<include file="public@headerTop"/>
+
+
+<div class="container tc-main">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="tc-box article-box">
+                <div style='text-align: center;'><h2>{$article.post_title}</h2></div>
+                <div class="article-infobox" style='text-align: right;color: #FF7518'>
+                    <span >{:date('Y-m-d H:i',$article.published_time)} </span>
+
+                </div>
+                <hr>
+                <div id="article_thmbnail" style="visibility: hidden;width: 0px;height: 0px">
+                    <notempty name="article['more']['thumbnail']" >
+                        <php>$file_url=cmf_get_file_download_url($article['more']['thumbnail']);</php>
+                        <img src="{$file_url}" >
+                    </notempty>
+                </div>
+                <div id="article_content">
+                    {$article.post_content}
+                </div>
+
+
+
+                <php>
+                    $after_content_hook_param=[
+                    'object_id'=>$article['id'],
+                    'table_name'=>'portal_post',
+                    'object_title'=>$article['post_title'],
+                    'user_id'=>$article['user_id'],
+                    'url'=>cmf_url_encode('portal/Article/index',array('id'=>$article['id'],'cid'=>$category['id'])),
+                    'object'=>$article
+                    ];
+                </php>
+                <hook name="after_content" param="after_content_hook_param"/>
+
+                <php>
+                    $comment_hook_param=[
+                    'object_id'=>$article['id'],
+                    'table_name'=>'portal_post',
+                    'object_title'=>$article['post_title'],
+                    'url'=>cmf_url_encode('portal/Article/index',array('id'=>$article['id'],'cid'=>$category['id']))
+                    ];
+                    $comment=hook_one('comment',$comment_hook_param);
+                </php>
+
+
+            </div>
+            <notempty name="article['more']['files'][0]['url']" >
+                <php>$file_url=cmf_get_file_download_url($article['more']['files'][0]['url']);</php>
+                附件：<a href="{$file_url}" download>{$article['more']['files'][0]['name']}</a>
+            </notempty>
+
+
+        </div>
+
+        <div class="col-md-3">
+            <div class="tc-box first-box">
+                <div class="headtitle">
+                    <h2>Top 5</h2>
+                </div>
+                <div class="ranking">
+                    <php>
+                        $hot_articles=[];
+                    </php>
+                    <ul class="list-unstyled">
+                        <portal:articles limit="5" order="post.post_hits DESC">
+                            <php>$top=$key<3?"top3":"";</php>
+                            <li class="{$top}">
+                                <i>{$key+1}</i>
+                                <a title="{$vo.post_title}"
+                                   href="{:url('portal/article/index',array('id'=>$vo['id']))}">
+                                    {$vo.post_title}
+                                </a>
+                            </li>
+                        </portal:articles>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<include file="public@scripts"/>
+
+<script>
+    var postId = '{$article.id}';
+    var userId = '{$article.user_id}';
+    var host   = '{$host}';
+    $(function(){
+
+        $.post("{:url('portal/article/logPostVisitor')}",{userId:userId, postId:postId,host:host },function(data){
+            console.log(data);
+        })
+
+    })
+</script>
+
+</body>
+</html>

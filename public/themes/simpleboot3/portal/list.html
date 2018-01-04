@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$category.name} {$category.seo_title} {$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$category.seo_keywords},{$site_info.site_seo_keywords|default=''}"/>
+    <meta name="description" content="{$category.seo_description},{$site_info.site_seo_description|default=''}">
+    <include file="public@head"/>
+    <include file="public@googleAd"/>
+</head>
+<body class="body-white">
+<div class="container">
+    <php>$demo_time=2;</php>
+    <h2>{$category.name}</h2>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="">
+                <php>
+                    $where=[
+                    'post.published_time'=>['egt',0]
+                    ];
+                </php>
+                <portal:articles item="vo" where="$where" order="post.published_time DESC" page="10"
+                                 relation="categories"
+                                 categoryIds="$category.id"
+                                 returnVarName="articles_data">
+                    <div class="list-boxes">
+                        <h2><a href="{:cmf_url('portal/Article/index',array('id'=>$vo['id'],'cid'=>$category['id']))}">{$vo.post_title}</a>
+                        </h2>
+                        <p>{$vo.post_excerpt}</p>
+                        <div>
+                            <div class="pull-left">
+                                <div class="list-actions">
+                                    <a href="javascript:;"><i class="fa fa-eye"></i><span>{$vo.post_hits}</span></a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </portal:articles>
+
+            </div>
+            <ul class="pagination">
+                <page/>
+            </ul>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

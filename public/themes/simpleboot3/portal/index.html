@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$site_info.site_seo_keywords|default=''}"/>
+    <meta name="description" content="{$site_info.site_seo_description|default=''}">
+    <link href="__TMPL__/public/assets/css/siteIndex.css" rel="stylesheet">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <include file="public@googleAd"/>
+
+</head>
+
+<body class="body-index">
+
+<include file="public@headerTop"/>
+<volist name="catSecondList" id="vo">
+    <div class="spiderUrl" style="display:none">
+        <a href="{:url('portal/list/index',['id'=>$vo['id']])}">{$vo['name']}</a>
+    </div>
+</volist>
+<div class="container">
+    <div class="middle">
+        <div class="home">
+            <a href="{:url('portal/index/index')}">{$site_info.site_name|default=''}</a>
+        </div>
+        <div class="cat-box">
+                <div class="every-cat"  style="background:#ed4040;">
+                    <a href="{:url('portal/index/index')}">最新</a>
+                </div>
+            <volist name='catList' id='vo'>
+                <div class="every-cat">
+                    <a href="{:url('portal/index/getSecondCat',['cid'=>$vo['id']])}">{$vo['name']}</a>
+                </div>
+            </volist>
+        </div>
+
+        <div class="title-box ">
+
+            <div class="player">
+                <div class="player-picture">
+                    <volist name="slideList" id="vo">
+                        <div class="player-picture-every" id="img-{$key+1}">
+                            <a href="{$vo['url']}" target="blank"><img src="/upload/{$vo['image']}"></a>
+                        </div>
+                        <div class="player-picture-every-title" id="img-title-{$key+1}">
+                            {$vo['content']}
+                        </div>
+                    </volist>
+                </div>
+                <div class="player-title">
+                    <volist name="slideList" id="vo">
+                        <div class="player-title-every" id="player-{$key+1}">
+                            {$vo['title']}
+                        </div>
+                    </volist>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+
+            <volist name='titleList' id='vo'>
+                <div class="every-title">
+                    <div class="every-title-picture">
+                        <a href="{:url('portal/article/index',['id'=>$vo['id']])}" target="_blank">
+                            <img src="http://{$_SERVER['HTTP_HOST']}/upload/{$vo['picture']}" >
+                        </a>
+                    </div>
+                    <div class="every-title-show">
+                        <div class="every-title-show-word">
+                            <a href="{:url('portal/article/index',['id'=>$vo['id']])}" target="_blank">{$vo['post_title']}</a>
+                        </div>
+                        <div class="every-title-show-time">
+                            【{$vo['published_time']|date='Y-m-d H:i',###}】
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </volist>
+
+        </div>
+
+        <div class="right">
+            <div class="search" id="search">
+                <input  type="text" onfocus="setBorderSelected();" onblur="setBorderUnselected()">
+                <div class="search-button" onclick="search()">
+                   GO!
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class=" top-box" >
+                <div class="top-column">Top 5</div>
+                <volist name='topList' id='vo'>
+                    <div class="every-top">
+                        <div class="every-top-picture">
+                            <a href="{:url('portal/article/index',['id'=>$vo['id']])}" target="_blank">
+                                <img src="http://{$_SERVER['HTTP_HOST']}/upload/{$vo['picture']}" >
+                            </a>
+                        </div>
+
+                        <div class="every-top-show">
+                            <a href="{:url('portal/article/index',['id'=>$vo['id']])}" target="_blank">{$vo['post_title']}</a>
+                        </div>
+                    </div>
+                </volist>
+
+            </div>
+
+            <div class="site-info" >
+                <h3>友情鏈接</h3>
+                <volist name="links" id ="vo">
+                    <p ><a href="{$vo.url}" target="{$vo['target']}">{$vo.name}</a> </p>
+                </volist>
+            </div>
+
+            <div class="site-info" >
+                <p > &copy; {$site_info.site_name} </p>
+                <p ><a href="__TMPL__/public/secret.html">隱私條款</a> </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script>
+    nowId='cat-0';
+    nowPage=1;
+    showId = 0;
+
+    $(function () {
+
+        show();
+        player = self.setInterval(show,3000);
+
+        $(window).scroll(function() {
+            console.log($(document).scrollTop());
+            console.log($(document).height()-$(window).height());
+            if($(document).scrollTop()+2>=$(document).height()-$(window).height()){
+                addHtml(nowId);
+            }
+        });
+
+        $('.player-title-every').mouseover(function(){
+            showId = $(this).attr('id').substr(7)-1;
+            show();
+            window.clearInterval(player);
+        })
+
+        $('.player-title-every').mouseout(function(){
+            player = self.setInterval(show,3000);
+        })
+
+    });
+
+
+    function setBorderSelected(){
+        $('.search').css('border','1px solid #e8342f');
+        return false;
+    }
+    function setBorderUnselected(){
+        $('.search').css('border','1px solid #e8e8e8');
+        return false;
+    }
+
+
+    function search(){
+        var keyword = $('.search input').val();
+        window.open('/portal/search/index/keyword/'+keyword);
+    }
+
+    function addHtml(id){
+        nowPage++;
+        var catId;
+        catId = id.substring(4);
+        var html = '';
+        $.get("{:url('portal/ajax/getTitles')}",{catId:catId,pageNum:nowPage,pageSize:20},function(data){
+            for(var i in data){
+                var url = "{:url('portal/article/index')}";
+                url = url.slice(0,-5);
+                html += '<div class="every-title" id="'+data[i].post_id+'"> <div class="every-title-picture">';
+                html +=  '<a href="'+url+'/id/'+data[i].post_id+'.html" target="_blank"><img src="/upload/'+data[i].picture+'" ></a>';
+                html +=  '</div><div class="every-title-show"> <div class="every-title-show-word"><a href="'+url+'/id/'+data[i].post_id+'.html" target="_blank">';
+                html +=  data[i].post_title+'</a> </div> <div class="every-title-show-time">';
+                html +=  '【'+data[i].published_time+'】 </div>  </div>';
+                html +=  '<div class="clear"></div> </div>';
+
+            }
+            $('.title-box').append(html);
+        })
+    }
+
+    function show(){
+        var num = parseInt(showId/6);
+        id = showId - num*6+1;
+        $('.player-title-every').css('background-color','');
+        $('#player-'+id).css('background-color','#ed4040');
+        $('.player-picture-every').hide();
+        $('.player-picture-every-title').hide();
+        $('#img-'+id).show();
+        $('#img-title-'+id).show();
+        showId++;
+    }
+
+
+</script>
+</body>
+</html>

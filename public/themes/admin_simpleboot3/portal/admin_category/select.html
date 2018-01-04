@@ -1,0 +1,93 @@
+<include file="public@header"/>
+</head>
+<body>
+<div class="wrap js-check-wrap">
+    <form method="post" class="js-ajax-form" action="{:url('AdminCategory/listorders')}">
+        <table class="table table-hover table-bordered table-list">
+            <thead>
+            <tr>
+                <th width="16">
+
+                </th>
+                <th width="50">ID</th>
+                <th>分类名称</th>
+            </tr>
+            </thead>
+            <tbody>
+            {$categories_tree}
+            </tbody>
+        </table>
+    </form>
+</div>
+<script src="__STATIC__/js/admin.js"></script>
+<script>
+
+        $('.data-item-tr').each(function(){
+            var path = $(this).attr('path');
+            var arr = path.split('-');
+            if(arr.length>2){
+                $(this).hide();
+            }else{
+                $(this).find('input').remove();
+            }
+        })
+
+
+    $('.data-item-tr').click(function (e) {
+
+        var $this = $(this);
+        if ($(e.target).is('input')) {
+            return;
+        }
+        path = $(this).attr('path');
+        pathFather = path+'-';
+        $('.data-item-tr').each(function(){
+            var pathEvery = $(this).attr('path');
+            var indexStr = 's'+pathEvery;
+
+            if(indexStr.indexOf(pathFather)>0){
+                $(this).show();
+            }else{
+                clickPathArr = path.split('-');
+                if(clickPathArr.length>2){
+                    return;
+                }
+                var arr = pathEvery.split('-');
+                if(arr.length>2){
+                    $(this).hide()
+                }
+            }
+        })
+
+        var $input = $this.find('input');
+        if ($input.is(':checked')) {
+            $input.prop('checked', false);
+        } else {
+            $input.prop('checked', true);
+        }
+    });
+
+    function confirm() {
+        var selectedCategoriesId   = [];
+        var selectedCategoriesName = [];
+        var selectedCategories     = [];
+        $('.js-check:checked').each(function () {
+            var $this = $(this);
+            selectedCategoriesId.push($this.val());
+            selectedCategoriesName.push($this.data('name'));
+
+            selectedCategories.push({
+                id: $this.val(),
+                name: $this.data('name')
+            });
+        });
+
+        return {
+            selectedCategories: selectedCategories,
+            selectedCategoriesId: selectedCategoriesId,
+            selectedCategoriesName: selectedCategoriesName
+        };
+    }
+</script>
+</body>
+</html>
